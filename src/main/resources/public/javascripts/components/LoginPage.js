@@ -132,7 +132,7 @@ class SignUpPage extends React.Component {
                     this.props.callback({status:false,curUser:''});
                 } else {
                     alert('Welcome to Time Travel!');
-                    alert('To view your travel plans, click Sync. \nIt syncs from your emails labeled as "oosetravel" starting from the first time sync is clicked. \nTo get travel plans from older emails, forward them to email address: "plans+029f81cb709843259f223dabcfc33a6b@in.us.traxo.com" and sync again. \n\nGo on and get started!');
+                    alert('To view your travel plans, click Sync. \nIt syncs from your emails labeled as "oosetravel" starting from the first time sync is clicked. \nTo get travel plans from older emails, forward them to email address: "traxo-mailbox-id" and sync again. \n\nGo on and get started!');
                     this.props.callback({status:true,curUser:this.state.username});
                 }
             });
