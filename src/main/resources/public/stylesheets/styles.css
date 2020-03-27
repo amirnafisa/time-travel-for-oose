@@ -1,0 +1,110 @@
+/*
+   Colour Scheme!!
+            #141562,
+            #486FBC,
+            #EAB5A1,
+            #8DD6FF,
+            #4973C9,
+            #D07CA7,
+            #F4915E,
+            #F5919E,
+            #B46F89,
+            #141562,
+            #486FBC
+*/
+
+
+body, html, .container-fluid {
+    min-height: calc(100vh - 50px);
+    background-color:#FAF8F9
+}
+.btn.btn-success{
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: #1e7e34;
+}
+.btn.btn-success1{
+    margin: 5px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: #1e7e34;
+}
+.btn.active {
+    background-color: lightgray;
+}
+
+.tab-content {
+    margin-top: 10px;
+}
+
+.form-group.center {
+     margin: auto;
+     position: absolute;
+     width: 30%;
+     height: 30%;
+     left: 35%; bottom: 37%;
+ }
+
+.form-group.center1 {
+    margin: auto;
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    left: 35%; bottom: 37%;
+}
+
+.form-group.center2 {
+    margin: auto;
+    position: absolute;
+    width: 30%;
+    height: 33%;
+    left: 35%; bottom: 37%;
+}
+.center {
+    margin: auto;
+    position: absolute;
+    left: 35%; top: 25%;
+}
+
+#itinerary {
+    margin: 5px;
+}
+
+#booking {
+    background-color: #d9e6f2;
+    vertical-align: middle;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+
+#header {
+    color: #0c5460;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#detail-box {
+    border-radius: 2px;
+}
+
+
+#delete-icon {
+    float: right;
+    cursor: pointer;
+}
+
+.form-group {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: lightgrey;
+    padding: 10px;
+}
+

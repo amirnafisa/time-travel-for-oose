@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'application'
+}
+
+group 'TimeTravelForOose'
+version '1.0'
+
+sourceCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.javalin:javalin:3.4.1'
+    compile 'org.slf4j:slf4j-simple:1.7.26'
+    compile 'org.xerial:sqlite-jdbc:3.28.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+    compile 'com.google.api-client:google-api-client:1.23.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
+    compile 'com.google.apis:google-api-services-gmail:v1-rev83-1.23.0'
+    compile 'com.sun.mail:javax.mail:1.6.0'
+    compile 'at.favre.lib:bcrypt:0.8.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    testImplementation 'org.mockito:mockito-core:2.7.22'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+    }
+}
+
+task stage(dependsOn: 'assemble')
+
+application {
+    mainClassName = 'com.jhuoose.timetravel.Server'
+}

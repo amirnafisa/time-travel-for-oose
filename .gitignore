@@ -1,0 +1,9 @@
+.idea/*
+.gradle/*
+build/*
+gradle/*
+tokens/*
+gradlew*
+*.db
+client_secret*
+*.properties
